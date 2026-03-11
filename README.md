@@ -21,6 +21,20 @@ Enforces 10 core coding principles when writing or reviewing TypeScript/JavaScri
 
 Each principle includes bad vs good examples. See [typescript-code-principles/references/principles.md](typescript-code-principles/references/principles.md) for the full reference.
 
+### JIRA Ticket Writer
+
+Generates well-structured JIRA tickets from short descriptions. Produces a concise, searchable summary line and a structured description optimized for claude-code to consume as a task specification.
+
+**Trigger phrases:** `/jira`, "write a ticket for...", "create a story for...", "I need a JIRA for..."
+
+**Supported ticket types:** Story, Bug, Task, Epic
+
+**Output includes:**
+- **Summary** — action-oriented, max ~80 chars, optimized for search and scanning
+- **Description** — structured with Context, Requirements, Acceptance Criteria, and Technical Notes sections
+
+See [jira/SKILL.md](jira/SKILL.md) for the full template and guidance.
+
 ## Usage
 
 Install a skill by copying its folder into your Claude Code skills directory, or reference it directly in your project configuration.
